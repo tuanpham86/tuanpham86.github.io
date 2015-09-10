@@ -1,0 +1,63 @@
+/*portfolio items carousel*/
+nav.carousel_pagination {
+	margin: -5px 0 30px 0;
+	text-align: center;
+	height: 15px;
+}
+nav.carousel_pagination a {
+	background:url(../images/bg-switcher.png) no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+nav.carousel_pagination a:hover {
+	background-position:0 -19px;
+}
+nav.carousel_pagination  a.selected {
+	background-position:0 -38px;
+}
+nav.carousel_pagination a span {
+	display: none;
+}
+
+.work-list {
+	padding:0;
+	margin:3px 0 3px 3px;
+}
+/*slider carousel*/
+.slider_list_carousel {
+	width: 990px;
+	height: 397px;
+}
+.slider_list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.slider_list_carousel ul li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+	background-color: #eee;
+	border: 0px solid #999;
+	width: 990px;
+	height: 397px;
+	padding: 0;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+.timer {
+	background: rgba(0,0,0, .3);
+	margin-top: -5px;
+	height: 5px;
+	width: 0px;
+	position:absolute;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}

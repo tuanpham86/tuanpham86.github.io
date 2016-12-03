@@ -213,14 +213,18 @@ function initializeMap() {
 
     // Iterates through the array of locations, creates a search object for each location
       locations.forEach(function(place){
-      // the search request object
-      var request = {
-        query: place
-      };
+        // New sections to check if locations[place] exists
+        // This keeps google maps from breaking if a location field is empty.
+        if (!locations[place]) 
+          return;
+        // the search request object
+        var request = {
+          query: place
+        };
 
-      // Actually searches the Google Maps API for location data and runs the callback
-      // function with the search results after each search.
-      service.textSearch(request, callback);
+        // Actually searches the Google Maps API for location data and runs the callback
+        // function with the search results after each search.
+        service.textSearch(request, callback);
     });
   }
 

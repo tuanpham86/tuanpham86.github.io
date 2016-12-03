@@ -24,6 +24,14 @@ h6 {
   padding: 0 5%;
 }
 
+.work-entry {
+    background-color: #f3f3f3;
+}
+
+.education-entry {
+    background-color: #f3f3f3;
+}
+
 #name {
     display: inline-block;
     margin-top: 60px !important;
@@ -173,6 +181,28 @@ span {
   text-align: center;
 }
 
+.online {
+  clear: both;
+}
+
+#projects {
+  clear: both;
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+  margin-top: 20px;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -197,19 +227,6 @@ span {
   .welcome-message {
     display: none;
   }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  display: inline-block;
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {

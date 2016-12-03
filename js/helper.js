@@ -213,10 +213,6 @@ function initializeMap() {
 
     // Iterates through the array of locations, creates a search object for each location
       locations.forEach(function(place){
-        // New sections to check if locations[place] exists
-        // This keeps google maps from breaking if a location field is empty.
-        if (!locations[place]) 
-          return;
         // the search request object
         var request = {
           query: place
